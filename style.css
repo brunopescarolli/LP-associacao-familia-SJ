@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-span, h1, h2, h3, p {
+span, h1, h2, h3, p, button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,7 +24,8 @@ h3 {
     background-color: black;
     position: relative;
     overflow: hidden;
-    height: 100vh; 
+    height: 100%;
+    width: 100%;
 }
 
 #video {
@@ -38,13 +39,15 @@ h3 {
   
 .video-overlay-container {
     position: absolute;
-    top: 10px;
+    top: 1px;
     color: #f1f1f1;
     height: 90vh;
     padding: 20px 0px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 50px;
+    margin-top: 20px;
   }
 
 .video-overlay-container h1{
@@ -56,11 +59,29 @@ h3 {
     font-size: 3rem;
 }
 
+.video-overlay-container button {
+    border-radius: 20px 0px 20px 0px;
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #92cd4d;
+    margin-top: 200px;
+    font-weight: bold;
+}
+
+.video-overlay-container button:hover{
+    background-color: #5d8231;
+}
+
+
 #logo {
     width: 30px;
-    height: 20px;
+    height: 30px;
     background-color: #92cd4d;
-    border-radius: 20px 0px 20px 0px;
+    border-radius: 15px 0px 15px 0px;
+    margin-right: 10px;
 }
 
 section {
@@ -91,6 +112,7 @@ section {
 }
 
 .container-projeto span {
+    margin-top: 25px;
     font-size: 1.4rem;
     color: #ffffff;
     text-align: justify;
@@ -119,22 +141,36 @@ section {
     height: 70vh;
     align-items: center;
     justify-content: space-between;
+    background-color: #e6e6e6;
+    margin-left: -80px;
+}
+
+.container-ajuda img{
+    width: 300px;
 }
 
 .container-ajuda span {
     font-size: 1.4rem;
-    width: 80%;
-    text-align: justify;
+    width: 40%;
+    text-align: center;
+}
+
+.container-ajuda h2{
+    font-size: 2rem;
 }
 
 .container-ajuda button {
     border-radius: 30px 0px 30px 0px;
-    width: 25%;
+    width: 30%;
     padding: 10px;
     cursor: pointer;
     font-size: 1.1rem;
     color: #ffffff;
     background-color: #33477d;
+}
+
+.container-ajuda button:hover{
+    background-color: #253359;
 }
 
 .section-missao {
@@ -148,15 +184,25 @@ section {
 }
 
 .container-missao {
-    width: 40%;
-    text-align: justify;
+    width: 35%;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.container-missao h2{
+    font-size: 2rem;
+}
+
+.container-missao span{
+    margin-top: 20px;
 }
 
 .section-missao img {
-    width: 30%;
+    width: 100%;
 }
 
 .section-contato {
@@ -184,11 +230,35 @@ section {
     height: 20vh;
 }
 
-.grid-contato {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.container-contato img{
+    width: 100px;
+    margin-left: -30px;
+}
+
+.container-contato img:hover{
+    width: 100px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.container-contato br{
+    margin-top: 30px;
+}
+
+.grid-contato{
+    display: flex;
+    flex-direction:row;
     gap: 10px;
 }
-.grid-contato img {
-    height: 40vh;
+
+.grid-contato div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.grid-contato div img {
+    height: 25vh;
+}
+
+.marmitas img{
 }
