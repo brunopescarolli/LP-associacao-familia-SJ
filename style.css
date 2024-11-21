@@ -113,7 +113,7 @@ section {
 
 .container-projeto span {
     margin-top: 25px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #ffffff;
     text-align: justify;
 }
@@ -143,6 +143,13 @@ section {
     justify-content: space-between;
     background-color: #e6e6e6;
     margin-left: -80px;
+}
+
+.container-ajuda div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .container-ajuda img{
@@ -227,7 +234,12 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 20vh;
+    height: 80vh;
+}
+
+.content-contato iframe{
+    padding: 20px;
+    width: 500px;
 }
 
 .container-contato img{
@@ -239,10 +251,6 @@ section {
     width: 100px;
     margin-left: -30px;
     cursor: pointer;
-}
-
-.container-contato br{
-    margin-top: 30px;
 }
 
 .grid-contato{
@@ -260,5 +268,202 @@ section {
     height: 25vh;
 }
 
-.marmitas img{
+@media only screen and (orientation: portrait){
+    .video-overlay-container {
+        position: absolute;
+        top: 1px;
+        color: #f1f1f1;
+        height: 90vh;
+        padding: 20px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+    .video-overlay-container h1{
+        font-size: 2.5rem;
+    }
+    
+    
+    .video-overlay-container h2{
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    .video-overlay-container button {
+        border-radius: 20px 0px 20px 0px;
+        width: 40%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        color: #ffffff;
+        background-color: #92cd4d;
+        margin-top: 30%;
+        font-weight: bold;
+    }
+
+    .frase{
+        margin-top: 60%;
+    }
+
+    .section-projetos h1 {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .docker-projetos {
+        display:flex;
+        flex-direction: column; 
+        justify-content: space-around;
+    }
+
+    .container-projeto {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        height: 40vh;
+        margin-left: 40px;
+    }
+
+    .container-projeto span {
+        font-size: 0.8rem;
+        color: #ffffff;
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .container-ajuda h2{
+        font-size: 1.2rem;
+        text-align: left;
+
+    }
+
+    section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:start;
+    }
+
+    .container-projeto img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .docker-ajuda {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-ajuda {
+        background-color: #e6e6e6;
+        justify-content: space-evenly;
+    }
+
+    .container-ajuda {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #e6e6e6;
+        margin-left: 0px;
+    }
+
+    .container-ajuda img{
+        width: 200px;
+    }
+
+    .container-ajuda span {
+        font-size: 0.8rem;
+        width: 90%;
+        text-align: justify;
+        margin: 20px;
+    }
+
+    .container-ajuda div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .docker-missao {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    
+    .container-missao {
+        width: 85%;
+        margin: 30px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .docker-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+    
+    .container-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .content-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80vh;
+    }
+
+    .content-contato h3{
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+
+    .container-contato h1{
+        font-size: 2rem;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .content-contato iframe{
+        padding: 20px;
+        width: 350px;
+    }
+
+    .container-contato img{
+        width: 100px;
+        margin-left: -13px;
+    }
+
+    .section-ajuda h1{
+        background-color: #e6e6e6;
+        font-size: 2rem;
+    }
+
+    .container-ajuda button {
+        border-radius: 30px 0px 30px 0px;
+        width: 50%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        color: #ffffff;
+        background-color: #33477d;
+    }
+
+    
 }
