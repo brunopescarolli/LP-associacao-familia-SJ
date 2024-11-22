@@ -1,11 +1,11 @@
 function share(){
 	if (navigator.share !== undefined) {
 		navigator.share({
-			title: 'O título da sua página',
-			text: 'Um texto de resumo',
-			url: 'https://seusite.com/sua_url',
+			title: 'Compartilhe nossa ação',
+			text: 'Nos ajude a melhorar vidas!',
+			url: 'https://associacaofamiliasaojose.com.br/',
 		})
-		.then(() => console.log('Successful share'))
-		.catch((error) => console.log('Error sharing', error));
+		.then(() => console.log('Link compartilhado com sucesso!'))
+		.catch((error) => console.log('Erro ao compartilhar link.', error));
 	}
 }
