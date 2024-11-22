@@ -12,12 +12,25 @@ span, h1, h2, h3, p, button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+    border: none;
+}
+
 h1 {
     font-size: 4rem;
 }
 
 h3 {
     font-size: 1.8rem;
+}
+
+#ig_icon{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#ig_icon:hover{
+    opacity: 1;
 }
 
 .video-container {
@@ -36,7 +49,18 @@ h3 {
     min-width: 100%;
     min-height: 100%;
 }
+
+#videoMobile {
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    display: none;
+}
   
+
 .video-overlay-container {
     position: absolute;
     top: 1px;
@@ -108,7 +132,7 @@ section {
     width: 30%;
     align-items: center;
     justify-content: space-between;
-    height: 70vh;
+    height: 58vh;
 }
 
 .container-projeto span {
@@ -122,17 +146,27 @@ section {
     color: #ffffff;
 }
 
+.section-projetos h2 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
 .container-projeto img {
-    width: 100%;
+    width: 30vw;
 }
 
 .section-ajuda {
     background-color: #e6e6e6;
 }
 
+.section-ajuda h1 {
+    margin-top: 5vh;
+}
+
 .docker-ajuda {
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 .container-ajuda {
@@ -142,7 +176,7 @@ section {
     align-items: center;
     justify-content: space-between;
     background-color: #e6e6e6;
-    margin-left: -80px;
+    width: 100%;
 }
 
 .container-ajuda div{
@@ -153,7 +187,7 @@ section {
 }
 
 .container-ajuda img{
-    width: 300px;
+    width: 25vw;
 }
 
 .container-ajuda span {
@@ -168,7 +202,7 @@ section {
 
 .container-ajuda button {
     border-radius: 30px 0px 30px 0px;
-    width: 30%;
+    width: 10vw;
     padding: 10px;
     cursor: pointer;
     font-size: 1.1rem;
@@ -188,6 +222,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 .container-missao {
@@ -196,8 +231,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 50px;
-    padding-top: 50px;
 }
 
 .container-missao h2{
@@ -206,6 +239,7 @@ section {
 
 .container-missao span{
     margin-top: 20px;
+    font-size: 1.1rem;
 }
 
 .section-missao img {
@@ -238,8 +272,7 @@ section {
 }
 
 .content-contato iframe{
-    padding: 20px;
-    width: 500px;
+    width: 100%;
 }
 
 .container-contato img{
@@ -255,20 +288,27 @@ section {
 
 .grid-contato{
     display: flex;
-    flex-direction:row;
-    gap: 10px;
+    flex-direction: column;
+    gap: 7vh;
+    justify-content: center;
 }
 
-.grid-contato div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.grid-contato img {
+    height: 24vh;
 }
-.grid-contato div img {
-    height: 25vh;
-}
+
+
 
 @media only screen and (orientation: portrait){
+
+    #videoMobile {
+        display: block;
+    }
+
+    #video {
+        display: none;
+    }
+
     .video-overlay-container {
         position: absolute;
         top: 1px;
@@ -326,7 +366,7 @@ section {
         width: 80%;
         align-items: center;
         height: 40vh;
-        margin-left: 40px;
+        margin-left: 10vw;
     }
 
     .container-projeto span {
@@ -353,13 +393,15 @@ section {
     }
 
     .container-projeto img {
-        width: 100%;
-        margin-top: 20px;
+        width: 70vw;
+        max-height: 30vh;
+        margin-top: 10vh;
     }
 
     .docker-ajuda {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .section-ajuda {
@@ -375,10 +417,11 @@ section {
         justify-content: space-between;
         background-color: #e6e6e6;
         margin-left: 0px;
+        width: 100%;
     }
 
     .container-ajuda img{
-        width: 200px;
+        width: 50vw;
     }
 
     .container-ajuda span {
@@ -388,25 +431,38 @@ section {
         margin: 20px;
     }
 
+    .container-ajuda div h2 {
+        text-align: center;
+    }
     .container-ajuda div{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .docker-missao {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: space-evenly;
+        height: 100%;
     }
     
     .container-missao {
         width: 85%;
-        margin: 30px;
+        margin-left: 30px;
         text-align: justify;
         display: flex;
         flex-direction: column;
         justify-content: start;
+    }
+
+    .container-missao h2 {
+        font-size: 2.8rem;
+    }
+
+    .container-missao span {
+        font-size: 1rem;
     }
 
     .docker-contato {
@@ -414,23 +470,26 @@ section {
         flex-direction: column;
         justify-content: start;
         width: 100%;
+        height: 100%;
     }
     
     .container-contato {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        height: 100%;
     }
     
     .content-contato {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 80vh;
+        height: 100%;
+        margin-top: 2.5vh;
     }
 
     .content-contato h3{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-left: 20px;
     }
 
@@ -441,8 +500,8 @@ section {
     }
 
     .content-contato iframe{
-        padding: 20px;
-        width: 350px;
+        margin-left: 5vw;
+        width: 90vw;
     }
 
     .container-contato img{
@@ -453,11 +512,12 @@ section {
     .section-ajuda h1{
         background-color: #e6e6e6;
         font-size: 2rem;
+        margin-top: 3vh;
     }
 
     .container-ajuda button {
         border-radius: 30px 0px 30px 0px;
-        width: 50%;
+        width: 30vw;
         padding: 10px;
         cursor: pointer;
         font-size: 0.8rem;
@@ -465,5 +525,8 @@ section {
         background-color: #33477d;
     }
 
-    
+   .grid-contato{
+        display: none;
+    } 
 }
+
